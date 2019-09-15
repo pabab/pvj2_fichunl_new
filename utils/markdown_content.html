@@ -1,0 +1,14 @@
+<div id="md-content">content</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.js" type="text/javascript"></script>
+<script type="text/javascript">
+function loadMarkdown(markdown_url, selector){
+    $.get(markdown_url, function(data){
+        var converter = new showdown.Converter(),
+        html = converter.makeHtml(data);
+        $(selector).html(html);
+    })
+}
+$(document).ready(function(){
+    loadMarkdown('https://raw.githubusercontent.com/pabab/pvj2_fichunl_new/master/desafios/desafio_6_survive_reloaded.md', '#md-content')
+});
+</script>

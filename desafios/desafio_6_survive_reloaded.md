@@ -2,7 +2,7 @@ Para este desafío vamos a retomar el juego del Desafío #3: Survive. Pueden uti
 
 En este caso utilizaremos Orientación a Objetos para organizar y crear una versión más compleja del juego. Deberán cumplir los siguientes puntos. 
 
-# Hero
+## Hero
 
 El héroe deberá tener su propia clase. Pueden mover (y arreglar) parte del código que ya tienen en la escena a la clase. La clase **Hero** deberá tener las siguiente funcionalidades:
 
@@ -13,7 +13,7 @@ El héroe deberá tener su propia clase. Pueden mover (y arreglar) parte del có
 * Un método *take_hit()* que resta una vida al personaje y le concede un período de gracia (lo hace invulnerable) por 2 segundos. 
 
 
-# Clase Ghost
+## Clase Ghost
 
 El fantasta también deberá tener su propia clase. Encapsular el comportamiento de un fantasma en una clase permitirá manejar una gran cantidad de fantasmas de manera transparente, algo que no resultaría tan sencillo hacer desde el método de actualización de la escena.
 
@@ -23,15 +23,15 @@ El fantasta también deberá tener su propia clase. Encapsular el comportamiento
 * Un método *set_initial_velocity()*, que será llamado cuando el fantasma empiece a moverse y deberá otorgarle una velocidad al azar.
 
     
-# Clase Hud
+## Clase Hud
 
 Además, vamos a crear una clase **Hud** (Heads Up Display) para ayudarnos a representar las vidas del personaje. La clase es simplemente un grupo de sprites que representan la cantidad de vidas del personaje. La clase hereda de **FlxGroup** (es simplemente un grupo que contiene los sprites para los 3 corazones).
 Por heredar de **FlxGroup**, el objeto se puede agregar a la escena.
 
-* Debe tener un método *setLives()* que reciba un entero con la cantidad de vidas del personaje y mostrar/ocultar los sprites que correspondan para reflejar tal situación. Pueden utilizar, por ejemplo, esta imagen para los corazones ()[https://opengameart.org/content/animated-lives]
+* Debe tener un método *setLives()* que reciba un entero con la cantidad de vidas del personaje y mostrar/ocultar los sprites que correspondan para reflejar tal situación. Pueden utilizar, por ejemplo, [ésta imagen para los corazones](https://opengameart.org/content/animated-lives)
 
 
-# PlayState
+## PlayState
 
 La escena se encarga de gestionar las interacciones entre los elementos el héroe, los fantasmas y el HUD. La clase debe tener los siguientes métodos:
 
@@ -45,18 +45,18 @@ Además, la escena debe aplicar la siguiente lógica:
 * Si el héroe pierde todas las vidas, se debe mostrar el mensaje "GAME OVER" en pantalla.
 
 
-# OPCIONAL
+## OPCIONAL
 
 **IMPORTANTE**: El siguiente item **no es obligatorio**, simplemente es para quienes deseen un desafío extra.
 
 * Periodicamente, cada una cantidad de tiempo que puede variar entre los 10 y 15 segundos, debe aparecer un powerup en una posición al azar del escenario. Si el héroe logra alcanzar el powerup, todos los fantasmas reduciran su velocidad a la mitad por un tiempo de 7 segundos. Luego de este período los fantasmas recobrarán su velocidad anterior. Además, durante el tiempo que dura el efecto del powerup, se deberá indicar dicha situación mediante algún efecto visual. Se recomienda crear nuevos métodos para implementar esta funcionalidad.
 
-# Pista: Timers
+## Pista: Timers
 
 Muchas de las funcionalidades necesarias para el desafío involucran realizar acciones que se disparen después de una determinada cantidad de tiempo.
 Una manera de lograr esto es con una variable que acumule tiempo transcurrido. Otra manera más práctica es utilizar timers. 
 
-En Haxeflixel, los timers se representan con objetos de tipo (**FlxTimer**)[]. Una vez creado el objeto, se puede disparar el timer con el método *start()* que recibe 2 argumentos: la cantidad de tiempo que debe transcurrir antes de ejecutar la acción, y una función callback que será invocada al finalizar dicho tiempo.
+En Haxeflixel, los timers se representan con objetos de tipo [**FlxTimer**](http://api.haxeflixel.com/flixel/util/FlxTimer.html). Una vez creado el objeto, se puede disparar el timer con el método *start()* que recibe 2 argumentos: la cantidad de tiempo que debe transcurrir antes de ejecutar la acción, y una función callback que será invocada al finalizar dicho tiempo.
 
 Por ejemplo, el siguiente código dispara una función luego de transcurridos 2 segundos.
 
@@ -86,4 +86,4 @@ function onTimer(t: FlxTimer){
 })
 ```
 
-Pueden ver un ejemplo de cómo podría quedar el juego terminado aquí: https://pabab.itch.io/survive-reloaded?secret=lvvU43QI205RlD6QHI8BqaTog
+Pueden ver un ejemplo de cómo podría quedar el juego terminado aquí: [https://pabab.itch.io/survive-reloaded?secret=lvvU43QI205RlD6QHI8BqaTog](https://pabab.itch.io/survive-reloaded?secret=lvvU43QI205RlD6QHI8BqaTog)

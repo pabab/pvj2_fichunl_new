@@ -1,0 +1,16 @@
+.mailbox_button{
+    background-color: #91dbbe;
+	border: 2px solid #70b39c;
+	color: #4c775d;
+	padding: 10px;
+	border-radius: 5px;
+	font-family: Arial;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+.mailbox_button:hover{
+	color: #70b39c;
+	border: 2px solid #91dbbe;
+	background-color: #befcda;
+}
