@@ -19,7 +19,6 @@ El fantasta también deberá tener su propia clase. Encapsular el comportamiento
 
 * Un **constructor** (función **new**) que no reciba parámetros. El fantasma aparece en una posicion al azar dentro de la pantalla. Además, luego de aparecer tiene un período de gracia en el cual no se mueve ni puede colisionar con nada durante 2 segundos. Durante éste período el sprite se muestra con algun efecto visual (por ejemplo flicker o semitransparencia).
 * Un método privado, de uso interno, llamado *update movement()* encargado de actualizar el movimiento interno.
-* Un método privado, de uso interno, llamado *update movement()* encargado de actualizar el movimiento interno.
 * Un método *set_initial_velocity()*, que será llamado cuando el fantasma empiece a moverse y deberá otorgarle una velocidad al azar.
 
     
