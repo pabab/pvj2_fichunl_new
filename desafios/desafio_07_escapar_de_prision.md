@@ -28,3 +28,10 @@ cada color. El personaje sólo podrá pasar a través de una puerta si posee la 
 que se activen a intervalos distintos y combinarlas para que el juego resulte más desafiante. **Si el personaje toca un trampa cuando ésta está activada entonces muere. Al morir, el personaje vuelve al principio y pierde las llaves que había juntado**. Pista: una forma sencilla de hacer ésto es utilizar *FlxG.resetState()* para reiniciar la escena actual.
 * La **puerta de salida** es una puerta especial que permite al personaje escapar de la prisión, pero **sólo puede cruzarla si ha adquirido las 3 llaves**.
 * Cuando personaje principal finalmente abandona la prisión se debe mostrar un mensaje de victoria que debe ser implementado en un nuevo estado, similar al del desafío anterior.
+
+## Otros aspectos
+
+* No es necesario utilizar animaciones.
+* No pueden utilizar los assets de los ejemplos, deben elegir y buscar assets propios. Recuerden que [opengameart.org](opengameart.org) e [itch.io](https://itch.io/game-assets) son muy buenas fuentes de recursos gratuitos.
+* Deberían utilizar grupos para mejorar el manejo de colisiones.
+* Pueden agregar otros elementos a la mecánica (powerups, trampas de distintos tipos, etc), siempre y cuando no omitan ninguno de los elementos solicitados.
