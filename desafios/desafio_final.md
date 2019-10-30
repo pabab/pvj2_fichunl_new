@@ -20,10 +20,23 @@ El objetivo del trabajo final es desarrollar un videojuego de temática/género 
 
 El trabajo será evaluado de acuerdo a la siguiente rúbrica:
 
-| Criterio | Regular | Bueno | Muy bueno |
-|----------|---------|-------|-----------|
-| Programación | Casi todo el código fue tomado de los ejemplos vistos durante el curso (0 pts) | Toma partes de código de los ejemplos, pero los combina de manera diferente o agrega nuevas funcionalidades (0.5 pts) | Programa varias nuevas funcionalidades o utiliza estructuras o funciones que no se abordaron durante las clases (1 pts) |
-| Estética     | Toma los gráficos de los ejemplos vistos durante el curso (0 pts)              | Toma algunos gráficos de los ejemplos vistos durante el curso y agrega otros (0.5 pts)                                | Utiliza recursos artísticos (gráficos, sonidos, etc) que no fueron empleados en los ejemplos y concuerdan con el estilo de juego (1 pts)  |
-| Originalidad | Copia la idea de alguno de los ejemplos del curso (0 pts)                      | Copia la idea de uno de alguno de los ejemplos del curso pero agrega nuevos elementos (0.5 pts)                       | La idea es original, en cuanto se diferencia lo suficiente de los ejemplos vistos durante el curso (1 pts) |
+### Programación
 
+- [x] (0 pts) Casi todo el código fue tomado de los ejemplos vistos durante el curso 
+- [x] (0.5 pts) Toma partes de código de los ejemplos, pero los combina de manera diferente o agrega nuevas funcionalidades
+- [x] (1 pts) Programa varias nuevas funcionalidades o utiliza estructuras o funciones que no se abordaron durante las clases (1 pts)
+
+
+### Estética
+
+- [x] (0 pts) Toma los gráficos de los ejemplos vistos durante el curso
+- [x] (0.5 pts) Toma algunos gráficos de los ejemplos vistos durante el curso y agrega otros 
+- [x] (1 pts) Utiliza recursos artísticos (gráficos, sonidos, etc) que no fueron empleados en los ejemplos y concuerdan con el estilo de juego
+
+
+### Originalidad
+
+- [x] (0 pts) Copia la idea de alguno de los ejemplos del curso
+- [x] (0.5 pts) Copia la idea de uno de alguno de los ejemplos del curso pero agrega nuevos elementos 
+- [x] (1 pts) La idea es original, en cuanto se diferencia lo suficiente de los ejemplos vistos durante el curso
 
