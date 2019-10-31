@@ -147,5 +147,5 @@ En Haxeflixel, esto es muy sencillo de lograr utilizando el atributo *allowColli
 Para el caso de los tilemaps, se puede utilizar el método [*setTileProperties()*](http://api.haxeflixel.com/flixel/tile/FlxBaseTilemap.html#setTileProperties). Por ejemplo, con el siguiente código se puede hacer que todos los tiles con el número de patrón 13 de un tilemap sean sólo colisionables desde arriba.
 
 ```haxe
-tilemap.setTileProperties(13, FlxObject.FLOOR);
+tilemap.setTileProperties(13, FlxObject.CEILING);
 ```
